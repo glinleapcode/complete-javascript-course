@@ -17,5 +17,11 @@ document.querySelector('.check').addEventListener('click', e => {
   document.querySelector('.number').textContent = secretNumber;
   if (isNaN(guess)) {
     message = '🏀 No A Number!';
+  } else if (guess === secretNumber) {
+    messagae = '👏 Correct Number!';
+  } else if (guess < secretNumber) {
+    message = 'Too Low!';
+  } else if (guess > secretNumber) {
+    message = 'Too High!';
   }
 });
