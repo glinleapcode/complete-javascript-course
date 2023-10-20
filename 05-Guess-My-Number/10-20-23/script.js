@@ -11,9 +11,9 @@ document.querySelector('.score').textContent = 89;
 */
 
 const secretNumber = Math.floor(Math.random() * 20) + 1;
+document.querySelector('.number').textContent = secretNumber;
 
 document.querySelector('.check').addEventListener('click', e => {
-  document.querySelector('.number').textContent = secretNumber;
   let guess = Number(document.querySelector('.guess').value);
 
   if (guess === '' || isNaN(guess)) {
