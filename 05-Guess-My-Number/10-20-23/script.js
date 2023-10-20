@@ -20,12 +20,12 @@ document.querySelector('.check').addEventListener('click', e => {
   if (guess === '' || isNaN(guess) || guess <= 0 || guess > 20) {
     document.querySelector('.message').textContent =
       '🏀 Invalid Number, must between 1-20';
-    console.log(document.querySelector('.message').textContent);
-    // console.log(message);
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '👏 Correct Number!';
   } else if (guess < secretNumber) {
-    document.querySelector('.message').textContent = 'Too Low!';
+    if (score > 0) {
+      document.querySelector('.message').textContent = 'Too Low!';
+    }
   } else if (guess > secretNumber) {
     document.querySelector('.message').textContent = 'Too High!';
   }
