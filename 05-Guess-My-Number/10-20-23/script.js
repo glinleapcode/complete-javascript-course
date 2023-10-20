@@ -14,12 +14,12 @@ let secretNumber = Math.floor(Math.random() * 20) + 1;
 
 document.querySelector('.check').addEventListener('click', e => {
   document.querySelector('.number').textContent = secretNumber;
-  let message = document.querySelector('.message').textContent;
+  let message;
 
   if (guess === '' || isNaN(guess)) {
     message = '🏀 No A Number!';
   } else if (guess === secretNumber) {
-    message = '👏 Correct Number!';
+    document.querySelector('.message').textContent = '👏 Correct Number!';
   } else if (guess < secretNumber) {
     message = 'Too Low!';
   } else if (guess > secretNumber) {
