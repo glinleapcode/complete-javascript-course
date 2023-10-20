@@ -2,6 +2,6 @@
 console.log(document.querySelector('.message').textContent);
 document.querySelector('.message').textContent = '👏 Correct Number!';
 document.querySelector('.btn.check').addEventListener('click', e => {
-  guessNumber = document.querySelector('.guess').value;
+  let guessNumber = document.querySelector('.guess').value;
   console.log(guessNumber);
 });
