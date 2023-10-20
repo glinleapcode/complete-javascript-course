@@ -12,7 +12,7 @@ document.querySelector('.score').textContent = 89;
 
 document.querySelector('.check').addEventListener('click', e => {
   const guess = Number(document.querySelector('.guess').value);
-  let secretNumber = Math.random() * 20 + 1;
+  let secretNumber = Math.floor(Math.random() * 20) + 1;
   document.querySelector('.number').textContent = secretNumber;
   let message = document.querySelector('.message').textContent;
 
