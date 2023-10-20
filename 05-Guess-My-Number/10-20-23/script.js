@@ -16,7 +16,7 @@ document.querySelector('.check').addEventListener('click', e => {
   document.querySelector('.number').textContent = secretNumber;
   let message = document.querySelector('.message').textContent;
 
-  if (isNaN(guess)) {
+  if (guess === '' || isNaN(guess)) {
     message = '🏀 No A Number!';
   } else if (guess === secretNumber) {
     messagae = '👏 Correct Number!';
