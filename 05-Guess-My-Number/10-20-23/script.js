@@ -12,7 +12,5 @@ document.querySelector('.score').textContent = 89;
 
 document.querySelector('.check').addEventListener('click', e => {
   console.log(this);
-  let guessNumber = document.querySelector('.guess').value;
-  document.querySelector('.score').textContent = guessNumber;
-  console.log(guessNumber);
+  const guess = Number((guessNumber = document.querySelector('.guess').value));
 });
