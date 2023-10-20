@@ -22,6 +22,7 @@ document.querySelector('.check').addEventListener('click', e => {
       '🏀 Invalid Number, must between 1-20';
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = '👏 Correct Number!';
+    document.querySelector('body').style.backgroundColor = '#60b347';
   } else if (guess < secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = 'Too Low!';
