@@ -13,6 +13,7 @@ document.querySelector('.score').textContent = 89;
 let secretNumber = Math.floor(Math.random() * 20) + 1;
 
 let score = 20;
+let highscore;
 
 document.querySelector('.check').addEventListener('click', e => {
   console.log(secretNumber);
