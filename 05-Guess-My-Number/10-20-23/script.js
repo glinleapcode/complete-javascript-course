@@ -53,4 +53,5 @@ document.querySelector('.again').addEventListener('click', e => {
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.score').textContent = '';
   document.querySelector('body').style.backgroundColor = '#222';
+  score = 20;
 });
