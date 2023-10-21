@@ -11,6 +11,7 @@ document.querySelector('.score').textContent = 89;
 */
 
 const secretNumber = Math.floor(Math.random() * 20) + 1;
+console.log(secretNumber);
 
 let score = 20;
 
@@ -21,6 +22,7 @@ document.querySelector('.check').addEventListener('click', e => {
     document.querySelector('.message').textContent =
       '🏀 Invalid Number, must between 1-20';
   } else if (guess === secretNumber) {
+    // win the game
     document.querySelector('.message').textContent = '👏 Correct Number!';
     document.querySelector('.number').textContent = secretNumber;
     document.querySelector('body').style.backgroundColor = '#60b347';
