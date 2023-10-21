@@ -11,11 +11,11 @@ document.querySelector('.score').textContent = 89;
 */
 
 let secretNumber = Math.floor(Math.random() * 20) + 1;
-console.log(secretNumber);
 
 let score = 20;
 
 document.querySelector('.check').addEventListener('click', e => {
+  console.log(secretNumber);
   let guess = Number(document.querySelector('.guess').value);
 
   if (guess === '' || isNaN(guess) || guess <= 0 || guess > 20) {
@@ -57,4 +57,5 @@ document.querySelector('.again').addEventListener('click', e => {
   document.querySelector('body').style.backgroundColor = '#222';
   score = 20;
   secretNumber = Math.floor(Math.random() * 20) + 1;
+  console.log(secretNumber);
 });
