@@ -10,7 +10,7 @@ document.querySelector('.number').textContent = 27;
 document.querySelector('.score').textContent = 89;
 */
 
-const secretNumber = Math.floor(Math.random() * 20) + 1;
+let secretNumber = Math.floor(Math.random() * 20) + 1;
 console.log(secretNumber);
 
 let score = 20;
