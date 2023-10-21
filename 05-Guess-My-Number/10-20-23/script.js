@@ -61,6 +61,6 @@ document.querySelector('.again').addEventListener('click', e => {
   document.querySelector('.message').textContent = 'Start guessing...';
   score = 20;
   document.querySelector('.score').textContent = score;
-
+  document.querySelector('body').style.backgroundColor = '#222';
   console.log(secretNumber);
 });
