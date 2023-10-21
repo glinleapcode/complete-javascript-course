@@ -45,3 +45,10 @@ document.querySelector('.check').addEventListener('click', e => {
     }
   }
 });
+
+document.querySelector('.again').addEventListener('click', e => {
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('.guess').value = '';
+  document.querySelector('.message').textContent = 'Start guessing...';
+  document.querySelector('.score').textContent = '';
+});
