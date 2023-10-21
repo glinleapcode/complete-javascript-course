@@ -29,7 +29,8 @@ document.querySelector('.check').addEventListener('click', e => {
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '28rem';
     if (score > highscore) {
-      document.querySelector('.highscore').textContent = score;
+      highscore = score;
+      document.querySelector('.highscore').textContent = highscore;
     }
   } else if (guess < secretNumber) {
     if (score > 1) {
