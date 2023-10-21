@@ -48,7 +48,9 @@ document.querySelector('.check').addEventListener('click', e => {
 
 document.querySelector('.again').addEventListener('click', e => {
   document.querySelector('.number').textContent = '?';
+  document.querySelector('.number').style.width = '15rem';
   document.querySelector('.guess').value = '';
   document.querySelector('.message').textContent = 'Start guessing...';
   document.querySelector('.score').textContent = '';
+  document.querySelector('body').style.backgroundColor = '#222';
 });
