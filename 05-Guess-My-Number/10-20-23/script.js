@@ -33,6 +33,7 @@ document.querySelector('.check').addEventListener('click', e => {
       document.querySelector('.highscore').textContent = highscore;
     }
   } else if (guess < secretNumber) {
+    // guess number too small
     if (score > 1) {
       document.querySelector('.message').textContent = 'Too Low!';
       score -= 1;
@@ -42,6 +43,7 @@ document.querySelector('.check').addEventListener('click', e => {
       document.querySelector('.score').textContent = 0;
     }
   } else if (guess > secretNumber) {
+    // guess number too large
     if (score > 1) {
       document.querySelector('.message').textContent = 'Too High!';
       score -= 1;
