@@ -48,6 +48,7 @@ document.querySelector('.check').addEventListener('click', e => {
   }
 });
 
+// reset the game if Again button clicked
 document.querySelector('.again').addEventListener('click', e => {
   document.querySelector('.number').textContent = '?';
   document.querySelector('.number').style.width = '15rem';
