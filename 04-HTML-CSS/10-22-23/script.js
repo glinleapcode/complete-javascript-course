@@ -9,5 +9,6 @@
       you need to know HTML and CSS, And it is even more fun when you can use
       all three together
     </p>
+    <p>Just another paragraph</p>
   </body>
 </html>;
