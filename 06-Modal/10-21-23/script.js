@@ -11,3 +11,13 @@ btnsOpenModal.forEach(btn => {
     overlay.classList.remove('hidden');
   });
 });
+
+btnCloseModal.addEventListener('click', () => {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
+
+overlay.addEventListener('click', () => {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+});
