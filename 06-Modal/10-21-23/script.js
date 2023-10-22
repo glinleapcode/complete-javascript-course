@@ -22,3 +22,10 @@ btnsOpenModal.forEach(btn => {
 btnCloseModal.addEventListener('click', closeModal);
 
 overlay.addEventListener('click', closeModal);
+
+//keyboard events are global events
+
+document.addEventListener('keydown', function (e) {
+  console.log(e.key);
+  console.log(e.keyCode);
+});
