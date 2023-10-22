@@ -9,6 +9,5 @@ btnsOpenModal.forEach(btn => {
     console.log(btn.textContent + ' button clicked');
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
-    modal.style.display = 'block';
   });
 });
