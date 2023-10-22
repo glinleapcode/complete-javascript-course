@@ -16,6 +16,11 @@ h1 {
   margin-bottom: 25px;
 }
 
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .first {
   color: blue;
 }
