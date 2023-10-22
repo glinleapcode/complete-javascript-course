@@ -16,7 +16,7 @@ h1 {
   background-color: yellow;
 }
 
-image {
-  width: 100px;
+#course-image {
   height: 100px;
+  width: 100px;
 }
