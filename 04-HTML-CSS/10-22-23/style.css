@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 25px;
 }
 
@@ -47,4 +47,8 @@ button {
 
 a {
   background-color: violet;
+}
+
+#course-image {
+  width: 300px;
 }
