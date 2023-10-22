@@ -7,3 +7,16 @@ body {
 h1 {
   font-size: 40px;
 }
+
+.first {
+  color: blue;
+}
+
+#your-name {
+  background-color: yellow;
+}
+
+image {
+  width: 100px;
+  height: 100px;
+}
