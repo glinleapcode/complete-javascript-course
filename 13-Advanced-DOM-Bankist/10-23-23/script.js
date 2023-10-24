@@ -1,6 +1,5 @@
 'use strict';
-
-///////////////////////////////////////
+/////////////////////
 // Modal window
 
 const modal = document.querySelector('.modal');
@@ -28,4 +27,30 @@ document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
     closeModal();
   }
+});
+
+const randomNumber = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1) + min);
+const randomColor = () =>
+  `rgb(${randomNumber(0, 255)}, ${randomNumber(0, 255)}, ${randomNumber(
+    0,
+    255
+  )})`;
+
+document.querySelector('.nav__link').addEventListener('click', function (e) {
+  console.log(this);
+  this.style.backgroundColor = randomColor();
+  console.log('LINK');
+});
+
+document.querySelector('.nav__links').addEventListener('click', function (e) {
+  console.log(this);
+  this.style.backgroundColor = randomColor();
+  console.log('Nav links');
+});
+
+document.querySelector('.nav').addEventListener('click', function (e) {
+  console.log(this);
+  this.style.backgroundColor = randomColor();
+  console.log('Nav');
 });
