@@ -40,17 +40,20 @@ const randomColor = () =>
 document.querySelector('.nav__link').addEventListener('click', function (e) {
   console.log(this);
   this.style.backgroundColor = randomColor();
+  console.log(e.eventPhase);
   console.log('LINK');
 });
 
 document.querySelector('.nav__links').addEventListener('click', function (e) {
   console.log(this);
   this.style.backgroundColor = randomColor();
+  console.log(e.eventPhase);
   console.log('Nav links');
 });
 
 document.querySelector('.nav').addEventListener('click', function (e) {
   console.log(this);
   this.style.backgroundColor = randomColor();
+  console.log(e.eventPhase);
   console.log('Nav');
 });
