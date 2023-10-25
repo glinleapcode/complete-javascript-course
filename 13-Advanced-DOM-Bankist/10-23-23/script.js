@@ -63,3 +63,4 @@
 
 const h1 = document.querySelector('h1');
 console.log(h1.children);
+console.log(h1.childNodes);
