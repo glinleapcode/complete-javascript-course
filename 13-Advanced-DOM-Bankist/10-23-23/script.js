@@ -68,6 +68,7 @@ const h1 = document.querySelector('h1');
 // console.log(h1.parentNode);
 console.log(h1.parentNode.children);
 console.log(h1.previousElementSibling);
+console.log(h1.nextElementSibling);
 
 // [...h1.parentNode.children].forEach(el => {
 //   console.log(el);
