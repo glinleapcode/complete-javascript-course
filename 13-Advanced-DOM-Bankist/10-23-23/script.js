@@ -73,3 +73,8 @@ console.log(h1.nextElementSibling);
 // [...h1.parentNode.children].forEach(el => {
 //   console.log(el);
 // });
+
+// Tabbed Component Operations
+
+const tabs = document.querySelectorAll('.operations_tab');
+const tabContainer = document.querySelector;
