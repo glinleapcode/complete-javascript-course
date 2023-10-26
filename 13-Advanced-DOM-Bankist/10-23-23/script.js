@@ -86,4 +86,4 @@ tabsContainer.addEventListener('click', function (e) {
 
 console.log(document.head.querySelectorAll('meta'));
 
-console.log(tabsContainer.getAttribute());
+console.log(tabsContainer.getAttribute('class'));
