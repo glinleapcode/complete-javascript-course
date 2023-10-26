@@ -31,6 +31,13 @@
 
 //scroll
 
+const learnMoreBtn = document.querySelector('.btn--scroll-to');
+const secion1 = document.querySelector('#section--1');
+
+learnMoreBtn.addEventListener('click', function (e) {
+  const sec1Coods = secion1.getBoundingClientRect();
+});
+
 // // event propagation
 // const randomNumber = (min, max) =>
 //   Math.floor(Math.random() * (max - min + 1) + min);
