@@ -82,6 +82,5 @@ console.log(tabsContainer);
 
 tabsContainer.addEventListener('click', function (e) {
   console.log(e.target);
+  console.log(e.target.closest(''));
 });
-
-
