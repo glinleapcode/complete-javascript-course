@@ -108,7 +108,7 @@ tabsContainer.addEventListener('click', function (e) {
   selected.classList.add('operations__content--active');
 });
 
-
 // Menu fade animation
 
-
+const nav = document.querySelector('.nav');
+const logo = document.querySelector('.nav__logo');
