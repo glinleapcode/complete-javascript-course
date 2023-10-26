@@ -114,6 +114,5 @@ const nav = document.querySelector('.nav');
 const logo = document.querySelector('.nav__logo');
 
 nav.addEventListener('mouseover', function (e) {
-  const li = e.target;
-  console.log(li.closest('nav__item'));
+  console.log(e.target.closest('.nav__item'));
 });
