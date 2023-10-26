@@ -100,5 +100,9 @@ tabsContainer.addEventListener('click', function (e) {
   let tabNum = clickedTab.dataset.tab;
   let selected = document.querySelector(`.operations__content--${tabNum}`);
 
+  contents.forEach(content => {
+    content.classList.remove('operations__content--active');
+  });
+
   selected.classList.add('operations__content--active');
 });
