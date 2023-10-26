@@ -93,3 +93,6 @@ tabsContainer.addEventListener('click', function (e) {
   console.log(tabNum);
   console.log(clickedTab.dataset);
 });
+
+const test = document.querySelector('.header__img');
+console.log(test.dataset);
