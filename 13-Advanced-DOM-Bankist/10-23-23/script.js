@@ -98,5 +98,6 @@ tabsContainer.addEventListener('click', function (e) {
   // let tabNum = clickedTab.getAttribute('data-tab'); // not recommendated
   let tabNum = clickedTab.dataset.tab;
   let selected = document.querySelector(`.operations__content--${tabNum}`);
-  console.log(selected);
+
+  selected.classList.add('operations__content--active');
 });
