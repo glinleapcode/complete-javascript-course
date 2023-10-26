@@ -86,9 +86,7 @@ tabsContainer.addEventListener('click', function (e) {
   if (!clickedTab) return; // if click on the empty space between the buttons
   tabs.forEach(tab => {
     console.log(tab);
-    if (tab.classList.contains('operations__tab--active')) {
-      tab.classList.remove('operations__tab--active');
-    }
+    tab.classList.remove('operations__tab--active');
   });
 
   clickedTab.classList.add('operations__tab--active');
