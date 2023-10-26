@@ -60,7 +60,7 @@
 // });
 
 // Attributes and dataset
-// data-versioN-num="4.5" in html
+// data-versioN-num="4.5"  data-Version-nUm="4.5" are the same
 // let testimage = document.querySelector('.nav__logo');
 // console.log(testimage.dataset);
 // console.log(testimage.dataset.versionNum);
@@ -97,5 +97,5 @@ tabsContainer.addEventListener('click', function (e) {
   // activate content area
   let tabNum = clickedTab.getAttribute('data-tab');
   console.log(tabNum);
-  console.log(clickedTab.dataset);
+  console.log(clickedTab.dataset.tab);
 });
