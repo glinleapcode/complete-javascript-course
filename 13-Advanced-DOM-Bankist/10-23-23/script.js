@@ -95,7 +95,6 @@ tabsContainer.addEventListener('click', function (e) {
 
   clickedTab.classList.add('operations__tab--active');
   // activate content area
-  let tabNum = clickedTab.getAttribute('data-tab');
-  console.log(tabNum);
-  console.log(clickedTab.dataset.tab);
+  // let tabNum = clickedTab.getAttribute('data-tab'); // not recommendated
+  let tabNum = clickedTab.dataset.tab;
 });
