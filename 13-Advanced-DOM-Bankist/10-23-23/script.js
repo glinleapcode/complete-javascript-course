@@ -81,7 +81,7 @@ const tabs = document.querySelectorAll('.operations_tab');
 
 tabsContainer.addEventListener('click', function (e) {
   const clickedTab = e.target.closest('.operations__tab');
-  if (!clickedTab) return; // if click on the empty space between the buttons
+  // if (!clickedTab) return; // if click on the empty space between the buttons
 
   console.log(tabs);
   tabs.forEach(tab => {
@@ -89,10 +89,10 @@ tabsContainer.addEventListener('click', function (e) {
     console.log(hello);
   });
 
-  clickedTab.classList.add('operations__tab--active');
-  console.log(clickedTab);
-  console.log(clickedTab.nextElementSibling);
-  console.log(clickedTab.previousElementSibling);
+  // clickedTab.classList.add('operations__tab--active');
+  // console.log(clickedTab);
+  // console.log(clickedTab.nextElementSibling);
+  // console.log(clickedTab.previousElementSibling);
 });
 
 // activate content area
