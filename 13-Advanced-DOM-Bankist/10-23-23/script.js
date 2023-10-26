@@ -130,8 +130,8 @@ const logo = document.querySelector('.nav__logo');
 
 nav.addEventListener('mouseover', function (e) {
   if (e.target.classList.contains('nav__link')) {
-    console.log(e.target);
+    console.log('eeeee', e.target);
   } else {
-    console.log(e.target);
+    console.log('ddddd', e.target);
   }
 });
