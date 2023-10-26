@@ -80,8 +80,6 @@ const tabsContainer = document.querySelector('.operations__tab-container');
 const tabs = document.querySelectorAll('.operations_tab');
 
 tabsContainer.addEventListener('click', function (e) {
-  // console.log(e.target);
-  // console.log(e.target.closest('.btn'));
   const clickedTab = e.target.closest('.operations__tab');
   if (!clickedTab) return; // if click on the empty space between the buttons
   console.log(clickedTab);
