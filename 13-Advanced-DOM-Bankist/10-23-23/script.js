@@ -85,6 +85,6 @@ tabsContainer.addEventListener('click', function (e) {
 
   const clickedTab = e.target.closest('.operations__tab');
   console.log(e.target);
-  console.log(clickedTab);
+  //console.log(clickedTab);
   clickedTab.classList.add('operations__tab--active');
 });
