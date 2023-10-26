@@ -91,4 +91,5 @@ tabsContainer.addEventListener('click', function (e) {
   // activate content area
   let tabNum = clickedTab.getAttribute('data-tab');
   console.log(tabNum);
+  console.log(clickedTab.dataset);
 });
