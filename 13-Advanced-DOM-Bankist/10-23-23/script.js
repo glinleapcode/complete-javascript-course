@@ -90,3 +90,6 @@ tabsContainer.addEventListener('click', function (e) {
 
   clickedTab.classList.add('operations__tab--active');
 });
+
+// activate content area
+document;
