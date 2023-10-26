@@ -117,4 +117,5 @@ nav.addEventListener('mouseover', function (e) {
   let elem = e.target.closest('.nav__item');
   if (!elem) return;
   console.log(elem);
+  elem.style.color = 'red';
 });
