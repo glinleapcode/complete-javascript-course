@@ -78,11 +78,12 @@
 
 const tabs = document.querySelectorAll('.operations_tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
-console.log(tabsContainer);
 
 tabsContainer.addEventListener('click', function (e) {
   // console.log(e.target);
   // console.log(e.target.closest('.btn'));
+
   const clickedTab = e.target.closest('.operations__tab');
+  console.log(clickedTab);
   clickedTab.classList.add('operations__tab--active');
 });
