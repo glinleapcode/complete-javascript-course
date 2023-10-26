@@ -36,6 +36,7 @@ const secion1 = document.querySelector('#section--1');
 
 learnMoreBtn.addEventListener('click', function (e) {
   const sec1Coods = secion1.getBoundingClientRect();
+  console.log(sec1Coods);
 });
 
 // // event propagation
