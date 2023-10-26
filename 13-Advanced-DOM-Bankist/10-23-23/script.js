@@ -88,6 +88,7 @@ tabsContainer.addEventListener('click', function (e) {
   });
 
   clickedTab.classList.add('operations__tab--active');
+  // activate content area
+  let tabNum = clickedTab.getAttribute('data-tab');
+  console.log(tabNum);
 });
-
-// activate content area
