@@ -159,3 +159,5 @@ nav.addEventListener('mouseout', handlehoover.bind(1));
 //     logo.style.opacity = 1;
 //   }
 // });
+
+// Sticky navigation
