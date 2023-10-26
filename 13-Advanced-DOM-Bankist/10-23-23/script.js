@@ -59,6 +59,12 @@
 //   console.log('Nav');
 // });
 
+// Attributes and dataset
+// data-versioN-num="4.5" in html
+// let testimage = document.querySelector('.nav__logo');
+// console.log(testimage.dataset);
+// console.log(testimage.dataset.versionNum);
+
 // Dom traversal
 
 // const h1 = document.querySelector('h1');
@@ -93,6 +99,3 @@ tabsContainer.addEventListener('click', function (e) {
   console.log(tabNum);
   console.log(clickedTab.dataset);
 });
-
-const test = document.querySelector('.header__img');
-console.log(test.dataset);
