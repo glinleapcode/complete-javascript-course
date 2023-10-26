@@ -128,30 +128,34 @@ const logo = document.querySelector('.nav__logo');
 //     });
 // });
 
-nav.addEventListener('mouseover', function (e) {
+function handlehoover() {
   if (e.target.classList.contains('nav__link')) {
     const link = e.target;
     const logo = link.closest('.nav').querySelector('.nav__logo');
     const siblings = link.closest('.nav').querySelectorAll('.nav__link');
     siblings.forEach(el => {
       if (el !== link) {
-        el.style.opacity = 0.5;
+        el.style.opacity = this;
       }
     });
-    logo.style.opacity = 0.5;
+    logo.style.opacity = this;
   }
-});
+}
 
-nav.addEventListener('mouseout', function (e) {
-  if (e.target.classList.contains('nav__link')) {
-    const link = e.target;
-    const logo = link.closest('.nav').querySelector('.nav__logo');
-    const siblings = link.closest('.nav').querySelectorAll('.nav__link');
-    siblings.forEach(el => {
-      if (el !== link) {
-        el.style.opacity = 1;
-      }
-    });
-    logo.style.opacity = 1;
-  }
-});
+nav.addEventListener('mouseover', function (e) {});
+nav.addEventListener('mouseout', function (e) {});
+
+// saved for reference, should be two function mouseover and mouseout, refactor
+// nav.addEventListener('mouseout', function (e) {
+//   if (e.target.classList.contains('nav__link')) {
+//     const link = e.target;
+//     const logo = link.closest('.nav').querySelector('.nav__logo');
+//     const siblings = link.closest('.nav').querySelectorAll('.nav__link');
+//     siblings.forEach(el => {
+//       if (el !== link) {
+//         el.style.opacity = 1;
+//       }
+//     });
+//     logo.style.opacity = 1;
+//   }
+// });
