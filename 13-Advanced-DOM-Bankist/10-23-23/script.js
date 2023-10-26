@@ -91,3 +91,4 @@ tabsContainer.addEventListener('click', function (e) {
 });
 
 // activate content area
+console.log(clickedTab);
