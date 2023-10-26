@@ -89,6 +89,9 @@ tabsContainer.addEventListener('click', function (e) {
   });
 
   clickedTab.classList.add('operations__tab--active');
+  console.log(clickedTab);
+  console.log(clickedTab.nextElementSibling);
+  console.log(clickedTab.previousElementSibling);
 });
 
 // activate content area
