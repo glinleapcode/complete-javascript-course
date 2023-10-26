@@ -84,4 +84,4 @@ tabsContainer.addEventListener('click', function (e) {
   console.log(e.target);
 });
 
-console.log(document.childNodes);
+console.log(document.head);
