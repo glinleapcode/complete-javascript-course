@@ -90,21 +90,20 @@ tabsContainer.addEventListener('click', function (e) {
   const clickedTab = e.target.closest('.operations__tab');
   if (!clickedTab) return; // if click on the empty space between the buttons
 
-  //activate tabs
+  //remove
   tabs.forEach(tab => {
     tab.classList.remove('operations__tab--active');
   });
-
-  clickedTab.classList.add('operations__tab--active');
-
-  // activate content
-  // let tabNum = clickedTab.getAttribute('data-tab'); // not recommendated
-  let tabNum = clickedTab.dataset.tab;
-  let selected = document.querySelector(`.operations__content--${tabNum}`);
 
   contents.forEach(content => {
     content.classList.remove('operations__content--active');
   });
 
+  //activate tabs
+  clickedTab.classList.add('operations__tab--active');
+
+  // activate content
+  let tabNum = clickedTab.dataset.tab;
+  let selected = document.querySelector(`.operations__content--${tabNum}`);
   selected.classList.add('operations__content--active');
 });
