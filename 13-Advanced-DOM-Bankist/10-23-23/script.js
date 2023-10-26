@@ -114,8 +114,8 @@ const nav = document.querySelector('.nav');
 const logo = document.querySelector('.nav__logo');
 
 nav.addEventListener('mouseover', function (e) {
-  let elem = e.target.closest('.nav__item');
-  if (!elem) return;
-  console.log(elem);
-  elem.style.opacity = '0.5';
+  let li = e.target.closest('.nav__item');
+  if (!li) return;
+
+  li.style.opacity = '0.5';
 });
