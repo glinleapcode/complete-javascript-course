@@ -142,8 +142,8 @@ function handlehoover() {
   }
 }
 
-nav.addEventListener('mouseover', function (e) {});
-nav.addEventListener('mouseout', function (e) {});
+nav.addEventListener('mouseover', handlehoover.bind(0.5));
+nav.addEventListener('mouseout', handlehoover.bind(1));
 
 // saved for reference, should be two function mouseover and mouseout, refactor
 // nav.addEventListener('mouseout', function (e) {
