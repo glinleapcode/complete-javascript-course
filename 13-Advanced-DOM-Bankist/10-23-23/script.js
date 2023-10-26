@@ -128,7 +128,7 @@ const logo = document.querySelector('.nav__logo');
 //     });
 // });
 
-function handlehoover(e) {
+const handlehoover = function (e) {
   if (e.target.classList.contains('nav__link')) {
     const link = e.target;
     const logo = link.closest('.nav').querySelector('.nav__logo');
@@ -140,7 +140,7 @@ function handlehoover(e) {
     });
     logo.style.opacity = this;
   }
-}
+};
 
 nav.addEventListener('mouseover', handlehoover.bind(0.5));
 nav.addEventListener('mouseout', handlehoover.bind(1));
