@@ -112,3 +112,7 @@ tabsContainer.addEventListener('click', function (e) {
 
 const nav = document.querySelector('.nav');
 const logo = document.querySelector('.nav__logo');
+
+nav.addEventListener('mouseover', function (e) {
+  console.log(e.target);
+});
