@@ -81,6 +81,6 @@ const tabsContainer = document.querySelector('.operations__tab-container');
 console.log(tabsContainer);
 
 tabsContainer.addEventListener('click', function (e) {
-  console.log(e.target);
-  console.log(e.target.closest(''));
+  // console.log(e.target);
+  console.log(e.target.closest('.btn'));
 });
