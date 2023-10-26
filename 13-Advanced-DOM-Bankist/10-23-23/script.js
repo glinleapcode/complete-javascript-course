@@ -90,7 +90,7 @@ tabsContainer.addEventListener('click', function (e) {
   const clickedTab = e.target.closest('.operations__tab');
   if (!clickedTab) return; // if click on the empty space between the buttons
 
-  //remove all the activte class from all the elements first
+  //remove active classes for both tabs and contents
   tabs.forEach(tab => {
     tab.classList.remove('operations__tab--active');
   });
