@@ -113,16 +113,25 @@ tabsContainer.addEventListener('click', function (e) {
 const nav = document.querySelector('.nav');
 const logo = document.querySelector('.nav__logo');
 
+// my way but not maintainable?
+// nav.addEventListener('mouseover', function (e) {
+//   let li = e.target.closest('.nav__item');
+//   console.log(li);
+//   if (!li) return;
+//   li.closest('.nav')
+//     .querySelectorAll('.nav__link')
+//     .forEach(link => {
+//       console.log(link);
+//       if (link != e.target) {
+//         link.style.opacity = 0.5;
+//       }
+//     });
+// });
+
 nav.addEventListener('mouseover', function (e) {
-  let li = e.target.closest('.nav__item');
-  console.log(li);
-  if (!li) return;
-  li.closest('.nav')
-    .querySelectorAll('.nav__link')
-    .forEach(link => {
-      console.log(link);
-      if (link != e.target) {
-        link.style.opacity = 0.5;
-      }
-    });
+  if (e.target.classList.contains('nav__link')) {
+    console.log(e.target);
+  } else {
+    console.log(e.target);
+  }
 });
