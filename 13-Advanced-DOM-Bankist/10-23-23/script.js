@@ -61,14 +61,14 @@
 
 // Dom traversal
 
-const h1 = document.querySelector('h1');
+// const h1 = document.querySelector('h1');
 // console.log(h1.children);
 // console.log(h1.childNodes);
 // console.log(h1.parentElement);
 // console.log(h1.parentNode);
-console.log(h1.parentNode.children);
-console.log(h1.previousElementSibling);
-console.log(h1.nextElementSibling);
+// console.log(h1.parentNode.children);
+// console.log(h1.previousElementSibling);
+// console.log(h1.nextElementSibling);
 
 // [...h1.parentNode.children].forEach(el => {
 //   console.log(el);
@@ -77,7 +77,7 @@ console.log(h1.nextElementSibling);
 // Tabbed Component Operations
 
 const tabs = document.querySelectorAll('.operations_tab');
-const tabsContainer = document.querySelector('.operations_tab-container');
+const tabsContainer = document.querySelector('.');
 
 tabsContainer.addEventListener('click', function (e) {
   console.log(e.target);
