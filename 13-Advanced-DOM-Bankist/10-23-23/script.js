@@ -77,4 +77,7 @@ console.log(h1.nextElementSibling);
 // Tabbed Component Operations
 
 const tabs = document.querySelectorAll('.operations_tab');
-const tabContainer = document.querySelector;
+const tabContainer = document.querySelector('.operations_tab-container');
+tabContainer.addEventListener('click', function (e) {
+  console.log(e.target);
+});
