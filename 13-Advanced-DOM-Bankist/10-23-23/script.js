@@ -128,7 +128,7 @@ const logo = document.querySelector('.nav__logo');
 //     });
 // });
 
-function handlehoover() {
+function handlehoover(e) {
   if (e.target.classList.contains('nav__link')) {
     const link = e.target;
     const logo = link.closest('.nav').querySelector('.nav__logo');
