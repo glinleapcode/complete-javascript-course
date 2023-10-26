@@ -97,4 +97,6 @@ tabsContainer.addEventListener('click', function (e) {
   // activate content area
   // let tabNum = clickedTab.getAttribute('data-tab'); // not recommendated
   let tabNum = clickedTab.dataset.tab;
+  let selected = document.querySelector(`.operations__content--${tabNum}`);
+  console.log(selected);
 });
