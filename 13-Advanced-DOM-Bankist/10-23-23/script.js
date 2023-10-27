@@ -40,7 +40,7 @@ learnMoreBtn.addEventListener('click', function (e) {
   //scroll
   window.scrollTo(
     window.scrollX + sec1Coods.left,
-    window.scrollY + secion1.top
+    window.scrollY + sec1Coods.top
   );
 });
 
