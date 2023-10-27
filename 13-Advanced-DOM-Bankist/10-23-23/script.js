@@ -39,6 +39,8 @@ learnMoreBtn.addEventListener('click', function (e) {
   console.log(sec1Coods);
 
   //window.scrollTo(sec1Coods.x, sec1Coods.y);
+  console.log(window.scrollX);
+  console.log(window.scrollY);
 });
 
 // // event propagation
