@@ -42,6 +42,8 @@ learnMoreBtn.addEventListener('click', function (e) {
   //window.scrollTo(sec1Coods.x, sec1Coods.y);
   console.log(window.scrollX);
   console.log(window.scrollY);
+  console.log(window.pageXOffset);
+  console.log(window.pageYOffset);
 });
 
 // // event propagation
