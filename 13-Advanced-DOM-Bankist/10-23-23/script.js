@@ -40,8 +40,8 @@ learnMoreBtn.addEventListener('click', function (e) {
   console.log(learnMoreBtn.getBoundingClientRect());
 
   //window.scrollTo(sec1Coods.x, sec1Coods.y);
-  console.log(window.scrollX);
-  console.log(window.scrollY);
+  //console.log(window.scrollX);
+  //console.log(window.scrollY);
 });
 
 // // event propagation
