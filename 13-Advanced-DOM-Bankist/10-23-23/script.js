@@ -38,10 +38,16 @@ learnMoreBtn.addEventListener('click', function (e) {
   const sec1Coods = secion1.getBoundingClientRect();
 
   //scroll
-  window.scrollTo(
-    window.scrollX + sec1Coods.left,
-    window.scrollY + sec1Coods.top
-  );
+  // window.scrollTo(
+  //   window.scrollX + sec1Coods.left,
+  //   window.scrollY + sec1Coods.top
+  // );
+
+  window.scrollTo({
+    left: window.scrollX + sec1Coods.left,
+    top: window.scrollY + sec1Coods.top,
+    behavior: 'smooth',
+  });
 });
 
 // // event propagation
