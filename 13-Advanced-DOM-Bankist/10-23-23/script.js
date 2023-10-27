@@ -38,7 +38,7 @@ learnMoreBtn.addEventListener('click', function (e) {
   const sec1Coods = secion1.getBoundingClientRect();
   console.log(sec1Coods);
 
-  window.scrollTo(sec1Coods.x, sec1Coods.y);
+  //window.scrollTo(sec1Coods.x, sec1Coods.y);
 });
 
 // // event propagation
