@@ -37,11 +37,11 @@ const secion1 = document.querySelector('#section--1');
 learnMoreBtn.addEventListener('click', function (e) {
   const sec1Coods = secion1.getBoundingClientRect();
   // console.log(sec1Coods);
-  console.log(learnMoreBtn.getBoundingClientRect());
+  //console.log(learnMoreBtn.getBoundingClientRect());
 
   //window.scrollTo(sec1Coods.x, sec1Coods.y);
-  //console.log(window.scrollX);
-  //console.log(window.scrollY);
+  console.log(window.scrollX);
+  console.log(window.scrollY);
 });
 
 // // event propagation
