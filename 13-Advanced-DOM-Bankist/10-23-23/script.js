@@ -32,10 +32,10 @@
 //scroll
 
 const learnMoreBtn = document.querySelector('.btn--scroll-to');
-const secion1 = document.querySelector('#section--1');
+const section1 = document.querySelector('#section--1');
 
 learnMoreBtn.addEventListener('click', function (e) {
-  const sec1Coods = secion1.getBoundingClientRect();
+  const sec1Coods = section1.getBoundingClientRect();
 
   //scroll
   // window.scrollTo(
@@ -43,11 +43,15 @@ learnMoreBtn.addEventListener('click', function (e) {
   //   window.scrollY + sec1Coods.top
   // );
 
-  window.scrollTo({
-    left: window.scrollX + sec1Coods.left,
-    top: window.scrollY + sec1Coods.top,
-    behavior: 'smooth',
-  });
+  // better way
+  // window.scrollTo({
+  //   left: window.scrollX + sec1Coods.left,
+  //   top: window.scrollY + sec1Coods.top,
+  //   behavior: 'smooth',
+  // });
+
+  //modern way
+  section1.scrollIntoView({ behavior: 'smooth' });
 });
 
 // // event propagation
