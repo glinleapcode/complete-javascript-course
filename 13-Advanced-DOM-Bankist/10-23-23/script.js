@@ -186,3 +186,5 @@ nav.addEventListener('mouseout', handlehoover.bind(1));
 // });
 
 // Sticky navigation
+
+const initialCoords = section1.getBoundingClientRect();
