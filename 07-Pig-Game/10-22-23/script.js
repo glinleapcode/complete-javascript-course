@@ -48,6 +48,8 @@ btnHold.addEventListener('click', function () {
         .classList.add('player--winner');
     } else {
       scores[activePlayer] += currentScore;
+      document.querySelector(`.score--${activePlayer}`).textContent =
+        scores[activePlayer];
 
       //switch player
       document.querySelector(`.current--${activePlayer}`).textContent = 0;
