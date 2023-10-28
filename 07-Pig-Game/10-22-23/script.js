@@ -49,6 +49,7 @@ btnHold.addEventListener('click', function () {
     } else {
       console.log('switich playser');
       scores[activePlayer] += currentScore;
+      console.log(scores[activePlayer]);
       document.querySelector(`.score--${activePlayer}`).textContent =
         scores[activePlayer];
 
