@@ -47,6 +47,10 @@ btnHold.addEventListener('click', function () {
         .classList.add('player--winner');
     } else {
       scores[activePlayer] += currentScore;
+
+      //switch player
+      currentScore = 0;
+      activePlayer = activePlayer === 0 ? 1 : 0;
     }
   }
 });
