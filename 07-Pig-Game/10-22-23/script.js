@@ -12,26 +12,36 @@ const btnHold = document.querySelector('.btn--hold');
 
 score0El.textContent = 0;
 score1El.textContent = 0;
+let scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
+let haswinner = false;
 diceEl.classList.add('hidden');
 
 btnRoll.addEventListener('click', function (e) {
-  const dice = Math.floor(Math.random() * 6) + 1;
-  console.log(dice);
-  diceEl.classList.remove('hidden');
-  diceEl.src = `dice-${dice}.png`;
-  if (dice !== 1) {
-    currentScore += dice;
-    document.getElementById(`current--${activePlayer}`).textContent =
-      currentScore;
-  } else {
-    document.getElementById(`current--${activePlayer}`).textContent = 0;
-    currentScore = 0;
-    activePlayer = activePlayer === 0 ? 1 : 0;
-    player0El.classList.toggle('player--active');
-    player1El.classList.toggle('player--active');
+  if (!haswinner) {
+    const dice = Math.floor(Math.random() * 6) + 1;
+    console.log(dice);
+    diceEl.classList.remove('hidden');
+    diceEl.src = `dice-${dice}.png`;
+    if (dice !== 1) {
+      currentScore += dice;
+      document.getElementById(`current--${activePlayer}`).textContent =
+        currentScore;
+    } else {
+      document.getElementById(`current--${activePlayer}`).textContent = 0;
+      currentScore = 0;
+      activePlayer = activePlayer === 0 ? 1 : 0;
+      player0El.classList.toggle('player--active');
+      player1El.classList.toggle('player--active');
+    }
   }
 });
 
-btnHold.addEventListener('click', function () {});
+btnHold.addEventListener('click', function () {
+  if (!haswinner) {
+    if (scores[activePlayer] + currentScore >= 20) {
+      haswinner = true;
+    }
+  }
+});
