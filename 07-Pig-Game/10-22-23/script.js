@@ -23,7 +23,7 @@ btnRoll.addEventListener('click', function (e) {
   diceEl.src = `dice-${dice}.png`;
   if (dice !== 1) {
     currentScore += dice;
-    document.querySelector(`.current--${activePlayer}`).textContent =
+    document.getElementById(`current--${activePlayer}`).textContent =
       currentScore;
   }
 });
