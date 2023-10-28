@@ -21,4 +21,7 @@ btnRoll.addEventListener('click', function (e) {
   console.log(dice);
   diceEl.classList.remove('hidden');
   diceEl.src = `dice-${dice}.png`;
+  if (dice !== 1) {
+    docu;
+  }
 });
