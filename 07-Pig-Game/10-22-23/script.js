@@ -22,6 +22,8 @@ btnRoll.addEventListener('click', function (e) {
   diceEl.classList.remove('hidden');
   diceEl.src = `dice-${dice}.png`;
   if (dice !== 1) {
-    document.querySelector(`.current--${activePlayer}`).textContent += dice;
+    currentScore += dice;
+    document.querySelector(`.current--${activePlayer}`).textContent =
+      currentScore;
   }
 });
