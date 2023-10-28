@@ -42,6 +42,11 @@ btnHold.addEventListener('click', function () {
   if (!haswinner) {
     if (scores[activePlayer] + currentScore >= 20) {
       haswinner = true;
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.add('player--winner');
+    } else {
+      scores[activePlayer] += currentScore;
     }
   }
 });
