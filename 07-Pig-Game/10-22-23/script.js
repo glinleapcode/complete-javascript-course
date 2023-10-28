@@ -13,3 +13,7 @@ const btnHold = document.querySelector('.btn--hold');
 score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add('hidden');
+
+const randomNum = Math.floor(Math.random() * 6) + 1;
+console.log(randomNum);
+diceEl.src = `dice-${randomNum}.png`;
