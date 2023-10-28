@@ -33,3 +33,5 @@ btnRoll.addEventListener('click', function (e) {
     player1El.classList.toggle('player--active');
   }
 });
+
+btnHold.addEventListener('click', function () {});
