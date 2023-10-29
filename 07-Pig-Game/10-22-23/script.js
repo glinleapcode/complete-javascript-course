@@ -10,13 +10,17 @@ const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
-score0El.textContent = 0;
-score1El.textContent = 0;
-let scores = [0, 0];
-let currentScore = 0;
-let activePlayer = 0;
-let haswinner = false;
-diceEl.classList.add('hidden');
+const init = function () {
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  let scores = [0, 0];
+  let currentScore = 0;
+  let activePlayer = 0;
+  let haswinner = false;
+  diceEl.classList.add('hidden');
+};
+
+init();
 
 const switchPlayer = function () {
   document.querySelector(`#current--${activePlayer}`).textContent = 0;
