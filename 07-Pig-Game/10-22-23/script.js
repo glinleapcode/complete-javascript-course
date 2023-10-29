@@ -50,11 +50,11 @@ btnHold.addEventListener('click', function () {
       console.log('switich playser');
       scores[activePlayer] += currentScore;
       console.log(scores[activePlayer]);
-      document.getElementById(`score--${activePlayer}`).textContent =
+      document.querySelector(`#score--${activePlayer}`).textContent =
         scores[activePlayer];
 
       //switch player
-      document.getElementById(`current--${activePlayer}`).textContent = 0;
+      document.querySelector(`#current--${activePlayer}`).textContent = 0;
       currentScore = 0;
       activePlayer = activePlayer === 0 ? 1 : 0;
       player0El.classList.toggle('player--active');
