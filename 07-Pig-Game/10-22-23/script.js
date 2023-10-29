@@ -18,6 +18,14 @@ let activePlayer = 0;
 let haswinner = false;
 diceEl.classList.add('hidden');
 
+const switchPlayer = function () {
+  document.querySelector(`#current--${activePlayer}`).textContent = 0;
+  currentScore = 0;
+  activePlayer = activePlayer === 0 ? 1 : 0;
+  player0El.classList.toggle('player--active');
+  player1El.classList.toggle('player--active');
+};
+
 btnRoll.addEventListener('click', function (e) {
   if (!haswinner) {
     const dice = Math.floor(Math.random() * 6) + 1;
@@ -30,11 +38,7 @@ btnRoll.addEventListener('click', function (e) {
         currentScore;
     } else {
       //switch player
-      document.getElementById(`current--${activePlayer}`).textContent = 0;
-      currentScore = 0;
-      activePlayer = activePlayer === 0 ? 1 : 0;
-      player0El.classList.toggle('player--active');
-      player1El.classList.toggle('player--active');
+      switchPlayer();
     }
   }
 });
@@ -46,6 +50,10 @@ btnHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
+      document
+        .querySelector(`.player--${activePlayer}`)
+        .classList.remove('player--active');
+      diceEl.classList.add('hidden');
     } else {
       console.log('switich playser');
       scores[activePlayer] += currentScore;
@@ -54,11 +62,7 @@ btnHold.addEventListener('click', function () {
         scores[activePlayer];
 
       //switch player
-      document.querySelector(`#current--${activePlayer}`).textContent = 0;
-      currentScore = 0;
-      activePlayer = activePlayer === 0 ? 1 : 0;
-      player0El.classList.toggle('player--active');
-      player1El.classList.toggle('player--active');
+      switchPlayer();
     }
   }
 });
