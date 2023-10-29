@@ -19,7 +19,7 @@ const init = function () {
   let currentScore = 0;
   let activePlayer = 0;
   let haswinner = false;
-  diceEl.classList.add('hidden');
+  diceEl.classList.remove('hidden');
   player0El.classList.remove('player--active');
   player0El.classList.remove('player--winner');
   player1El.classList.remove('player--active');
