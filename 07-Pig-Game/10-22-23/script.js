@@ -20,8 +20,11 @@ const init = function () {
   let activePlayer = 0;
   let haswinner = false;
   diceEl.classList.add('hidden');
+  player0El.classList.remove('player--active');
+  player0El.classList.remove('player--winner');
   player1El.classList.remove('player--active');
-  player1El.classList.remove('player--active');
+  player0El.classList.remove('player--winner');
+  player0El.classList.add('player--active');
 };
 
 init();
