@@ -45,7 +45,10 @@ btnRoll.addEventListener('click', function (e) {
 
 btnHold.addEventListener('click', function () {
   if (!haswinner) {
-    if (scores[activePlayer] + currentScore >= 20) {
+    scores[activePlayer] += currentScore;
+    document.querySelector(`#score--${activePlayer}`).textContent =
+      scores[activePlayer];
+    if (scores[activePlayer] >= 20) {
       haswinner = true;
       document
         .querySelector(`.player--${activePlayer}`)
@@ -55,12 +58,6 @@ btnHold.addEventListener('click', function () {
         .classList.remove('player--active');
       diceEl.classList.add('hidden');
     } else {
-      console.log('switich playser');
-      scores[activePlayer] += currentScore;
-      console.log(scores[activePlayer]);
-      document.querySelector(`#score--${activePlayer}`).textContent =
-        scores[activePlayer];
-
       //switch player
       switchPlayer();
     }
