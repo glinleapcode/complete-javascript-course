@@ -155,6 +155,15 @@ setTimeout(() => {
 - rejected: the operation failed
 - settled: the promise has fulfilled or rejected, but not pending
 
+### Consuming Promises
+
+- Consuming a promise means that we want to access the future value that the promise is holding.
+- We can consume a promise using the `then()` method.
+- The `then()` method takes two callback functions as parameters. The first callback function is called if the promise is fulfilled, and the second callback function is called if the promise is rejected.
+- The `then()` method returns a promise, so we can chain multiple `then()` methods together.
+- The `catch()` method is used to handle errors that might occur inside a promise. The `catch()` method is the same as the second callback function passed into the `then()` method.
+- The `finally()` method is called no matter if the promise is fulfilled or rejected. The `finally()` method is the same as the first callback function passed into the `then()` method.
+
 ```javascript
 const getCountryData = function (country) {
   fetch(`https://restcountries.eu/rest/v2/name/${country}`)
@@ -187,7 +196,12 @@ const renderCountry = function (data, className = '') {
 };
 ```
 
-> Get neighboring country using Promise
+### Chaining Promises
+
+- We can chain multiple `then()` methods together to execute asynchronous operations in sequence.
+- The value returned from the first `then()` method is passed into the second `then()` method, and so on.
+- The value returned from the last `then()` method is passed into the first callback function passed into the `then()` method.
+- The `catch()` method is used to handle errors that might occur inside a promise. The `catch()` method is the same as the second callback function passed into the `then()` method.
 
 ```javascript
 const getCountryData = function (country) {
